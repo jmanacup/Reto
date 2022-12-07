@@ -1,5 +1,5 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Input, Header, Footer, Button, Static
+from textual.widgets import Input, Header, Footer, Button
 from textual.widget import Widget
 from textual.binding import Binding
 from textual.reactive import reactive
