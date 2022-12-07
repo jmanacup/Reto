@@ -1,0 +1,34 @@
+Screen {
+    align: center middle;
+    background: #121212;
+}
+Header {
+    dock: top;
+    height: 1;
+    content-align: center middle;
+    background: white 70%;
+    color: black;
+}
+
+.box {
+    width: 40;
+    height: 1;
+    margin: 1;
+    color: white;
+}
+
+.submitBtn {
+    width: 40;
+    height: 3;
+    margin: 1;
+    background: white 70%;
+}
+
+.result {
+    width: 40;
+    height: 2;
+    margin: 1;
+    text-align: end;
+    color: lightgreen;
+    padding: 1;
+}
