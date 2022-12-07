@@ -18,6 +18,7 @@ def main():
 
 def get_listing(job_title, location, filename, pages=1):
 
+    print("\nRetrieving Job listings... Please wait....\n")
     url = "https://www.indeed.com/"
 
     user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36'
@@ -59,6 +60,8 @@ def get_listing(job_title, location, filename, pages=1):
 
     for i in range(pages):
 
+        print("Retrieving Entries on page " + str(i + 1))
+
         job_listings = driver.find_elements(By.CLASS_NAME, "job_seen_beacon")
 
         for job in job_listings:
@@ -99,6 +102,8 @@ def get_listing(job_title, location, filename, pages=1):
             worksheet.set_column(idx, idx, max_len)  # set column width
 
     writer.save()
+
+    print("\nDONE!")
 
 
 if __name__ == "__main__":
